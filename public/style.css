@@ -1,0 +1,224 @@
+.container {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario {
+    
+    margin-top: 18px;
+    padding: 20px;
+    max-width: 2000px;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+}
+
+.section-campos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.required-indicator {
+    color: red;
+}
+
+.campo {
+    flex: 0 0 calc(50% - 10px);
+    margin-bottom: 10px;
+}
+
+.campo label {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+}
+
+
+.campo input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #888888;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    padding-left: 5px;
+}
+
+.volume-input {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 300px;
+}
+
+.volume-input input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #888888;
+    text-align: center;
+}
+
+.volume-input button {
+    width: 37px;
+    height: 38px;
+    background-color: #b8b4b4;
+    color: black;
+    border: 1px solid #888888;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+
+.volume-input button:hover {
+    background-color: #535353;
+}
+
+.volume-input button.plus {
+    right: 0;
+    border-left: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.volume-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.volume-input button.minus {
+    border-right: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.section-opcoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; 
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+}
+
+.pergunta {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.campo-opcoes {
+    margin: 5px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2); 
+}
+
+.pergunta-checkbox {
+    display: none;
+}
+
+.pergunta-checkbox {
+    text-align: flex-start; 
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.opcoes-1.novas-opcoes, .opcoes-2.novas-opcoes {
+    display: none;
+}
+
+#op1:checked ~ .opcoes-1 {
+    display: block; 
+}
+
+.opcoes-1.novas-opcoes {
+    column-count: 3;
+    column-gap: 0px;
+}
+
+.coluna {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    line-height: 0.5;
+}
+
+.coluna:first-child {
+    align-items: flex-start; 
+}
+
+.coluna:nth-child(2) {
+    align-items: flex-start; 
+    margin-left: 100px;
+}
+
+.coluna:last-child {
+    align-items: flex-start;
+    margin-left: 100px; 
+}
+
+#op2:checked ~ .opcoes-2 {
+    display: block; 
+}
+
+.opcoes-2 label {
+    display: block; 
+    text-align: left; 
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.opcoes-2 textarea {
+    width: 100%;
+}
+
+textarea {
+    padding: 10px; 
+}
+
+textarea:hover {
+    border-color: #535353;
+}
+
+.section-politica {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.section-botao {
+    bottom: 0;
+    width: 100%;
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.botao button {
+    background-color: red;
+    width: 139px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.botao button:hover {
+    background-color: #cc0000; 
+}
